@@ -145,3 +145,11 @@ Pull requests and issues are welcome. Extend detection logic, optimize gas usage
 
 MIT
 
+
+## Screenshots
+
+### Deployment Logs
+![Deployment](Screenshot-Deploy.png)
+
+### Compiler Errors
+![Errors](Screenshot-Errors.png)
