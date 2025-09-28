@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract SuspiciousAllowanceTrap {
+    event AllowanceSpike(address owner, address spender, uint256 oldAmount, uint256 newAmount);
+
+    function checkAllowance(
+        address owner,
+        address spender,
+        uint256 oldAmount,
+        uint256 newAmount
+    ) public returns (bool) {
+        if (newAmount > oldAmount * 10) {
+            emit AllowanceSpike(owner, spender, oldAmount, newAmount);
+            return true;
+        }
+        return false;
+    }
+}

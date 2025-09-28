@@ -1,0 +1,7 @@
+.vscode/
+cache/
+out/
+lib/
+foundry.lock
+.env
+.gitmodules
